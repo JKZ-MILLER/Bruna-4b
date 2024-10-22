@@ -1,0 +1,196 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #B0B0B0;
+    --botao-azul: #0074E4; /* Tom mais vibrante */
+    --cor-fundo: #101010; /* Fundo mais escuro e sofisticado */
+    --cinza-claro: #F5F5F5;
+    --cinza-escuro: #1C1C1C;
+    --botao-azul-efeito: #0057B7;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400; /* Regular */
+    line-height: 1.5; /* Melhor espaçamento entre linhas */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 2em;
+}
+
+.principal {
+    background-image: url("img/paramount-background.jpg"); /* Imagem de fundo mais realista */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.container__caixa {
+    background: rgba(0, 0, 0, 0.7); /* Fundo semitransparente */
+    padding: 3em 4em;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.container__titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 1.5em;
+}
+
+.container__imagem {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 6px;
+    padding: 1em 2em;
+    color: var(--branco-principal);
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    color: var(--branco-principal);
+    padding: 1em 2em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
+.botao_secundario:hover {
+    border-color: var(--botao-azul);
+    color: var(--botao-azul);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    margin-top: 1em;
+}
+
+.secundario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 10em;
+    background-color: var(--cinza-escuro);
+    margin-bottom: 3em;
+}
+
+.secundario__imagem {
+    width: 50%;
+    max-width: 500px;
+}
+
+.container__descricao {
+    width: 50%;
+    padding-right: 3em;
+}
+
+.descricao__titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-claro);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.dispositivos {
+    background-color: var(--cinza-escuro);
+    padding: 4em;
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.lista__item {
+    font-size: 18px;
+    color: var(--branco-principal);
+    margin-top: 1em;
+    text-align: center;
+}
+
+.lista__item img {
+    width: 100px;
+    margin-bottom: 1em;
+}
+
+.rodape {
+    background-color: var(--cinza-escuro);
+    padding: 3em;
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    list-style: none;
+    margin-bottom: 1.5em;
+}
+
+.lista__link a {
+    font-size: 14px;
+    color: var(--cinza-claro);
+    transition: color 0.3s;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    line-height: 1.5;
+}
